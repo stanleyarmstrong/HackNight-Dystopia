@@ -7,13 +7,15 @@ package newthing;
 
 
 import java.util.Scanner ; 
+import javafx.application.*;
+import javafx.stage.Stage;
 
 
 /**
  *
  * @author Stanley
  */
-public class NewThing {
+public class NewThing extends Application{
     public NewThing(){
         String person = "Jason Bourne";
         System.out.println("Hello I am the savior " + person + ". I was Bourne out of a meme.");
@@ -48,7 +50,12 @@ public class NewThing {
         System.out.println("Looks like it will be just fists. For now. heh heh heh");
         jason.walks();
         
+        
 
+    }
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        
     }
     
     

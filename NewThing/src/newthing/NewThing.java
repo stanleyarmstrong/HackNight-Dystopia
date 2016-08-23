@@ -7,15 +7,15 @@ package newthing;
 
 
 import java.util.Scanner ; 
-import javafx.application.*;
-import javafx.stage.Stage;
+import javax.swing.*;
+
 
 
 /**
  *
  * @author Stanley
  */
-public class NewThing extends Application{
+public class NewThing{
     public NewThing(){
         String person = "Jason Bourne";
         System.out.println("Hello I am the savior " + person + ". I was Bourne out of a meme.");
@@ -43,6 +43,7 @@ public class NewThing extends Application{
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        MyGameGraphics game = new MyGameGraphics();
         System.out.println("The world has flipped upside down. \n The world needed a hero. \n Someone they could trust that man was... \n Jason Bourne ");
         NewThing jason = new NewThing();
         Sword sword = new Sword() ;
@@ -53,10 +54,7 @@ public class NewThing extends Application{
         
 
     }
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        
-    }
+   
     
     
 }
